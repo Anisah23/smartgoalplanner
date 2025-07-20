@@ -1,0 +1,39 @@
+.deposit-form {
+  background: #1c1f26;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px #14f1c6;
+  margin: 1rem auto;
+  max-width: 500px;
+}
+
+.deposit-form h2 {
+  color: #14f1c6;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.deposit-form input,
+.deposit-form select,
+.deposit-form button {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 8px;
+}
+
+.deposit-form select,
+.deposit-form input {
+  background: #0e1117;
+  color: #fff;
+  border: 1px solid #14f1c6;
+}
+
+.deposit-form button {
+  background: #14f1c6;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}

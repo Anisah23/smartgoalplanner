@@ -1,0 +1,89 @@
+.navbar {
+  background-color: #0d1117;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #1f2937;
+}
+
+.navbar-logo {
+  font-size: 1.6rem;
+  color: #33fbb7;
+  font-weight: bold;
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 0 0 6px #33fbb7;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: #33fbb7;
+  font-size: 1.8rem;
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-links li a {
+  color: #ffffffcc;
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: #33fbb7;
+  transition: width 0.3s ease;
+  box-shadow: 0 0 5px #33fbb7;
+}
+
+.navbar-links li a:hover {
+  color: #ffffff;
+}
+
+.navbar-links li a:hover::after {
+  width: 100%;
+}
+
+/* Responsive Mobile Nav */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    flex-direction: column;
+    background-color: #0d1117;
+    width: 100%;
+    text-align: right;
+    padding: 1rem 2rem;
+    display: none;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links li {
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,50 @@
+.goal-card {
+  background: #1c1f26;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 0 10px #14f1c6;
+  transition: transform 0.2s;
+}
+
+.goal-card:hover {
+  transform: translateY(-4px);
+}
+
+.progress-bar {
+  background-color: #0e1117;
+  border: 1px solid #14f1c6;
+  border-radius: 8px;
+  height: 20px;
+  margin-top: 0.5rem;
+}
+
+.progress-bar-inner {
+  background-color: #14f1c6;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #14f1c6;
+  transition: width 0.3s ease-in-out;
+}
+
+.delete-btn {
+  background-color: #ff4f4f;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.edit-btn {
+  background-color: #14f1c6;
+  color: #000;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
