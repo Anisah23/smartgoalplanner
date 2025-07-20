@@ -1,4 +1,4 @@
-/* Reset and font */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +13,6 @@ body {
   overflow-x: hidden;
 }
 
-/* App container */
 .app-container {
   min-height: 100vh;
   display: flex;
@@ -31,13 +30,13 @@ button:hover {
   filter: brightness(1.1);
 }
 
-/* Forms */
+
 input, select {
   font-size: 1rem;
   color: #ffffff;
 }
 
-/* Scrollbar (optional for theme) */
+
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -45,7 +44,7 @@ input, select {
   background: #1c1f26;
 }
 ::-webkit-scrollbar-thumb {
-  background: #14f1c6;
+  background: #ff0080;
   border-radius: 8px;
 }
 html {

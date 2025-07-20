@@ -4,7 +4,7 @@ import "./GoalList.css";
 
 function GoalList({ goals, onUpdateGoal, onDeleteGoal, onEditGoal }) {
   return (
-    <div className="goal-list">
+    <div  className="goal-list">
       {goals.map(goal => (
         <GoalCard
           key={goal.id}

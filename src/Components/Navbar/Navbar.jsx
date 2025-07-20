@@ -11,13 +11,11 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">SmartGoal</div>
-      <button className="menu-toggle" onClick={handleToggle}>
-        ☰
-      </button>
+     
       <ul className={`navbar-links ${menuOpen ? "active" : ""}`}>
-        <li><a href="#dashboard">Dashboard</a></li>
-        <li><a href="#goal-form">Add Goal</a></li>
-        <li><a href="#overview">Overview</a></li>
+         <li><a href="#header">Add Goal</a></li>
+          <li><a href="#header">Deposit</a></li>
+        <li><a href="#goalsection">Goals</a></li>
       </ul>
     </nav>
   );

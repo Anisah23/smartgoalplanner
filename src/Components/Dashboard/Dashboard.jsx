@@ -59,7 +59,7 @@ function Dashboard() {
     <div className="dashboard-container">
       <OverviewPanel goals={goals} />
 
-      <div className="collapsible-section">
+      <div  className="collapsible-section">
         <div className="form-toggle-container">
           <button onClick={() => setShowGoalForm(prev => !prev)}>
             {showGoalForm ? "Hide Goal Form" : "Add  Goal"}
@@ -69,7 +69,7 @@ function Dashboard() {
           </button>
         </div>
 
-        <div className="forms-row">
+        <div  className="forms-row">
           {showGoalForm && (
             <div className="form-panel">
               <GoalForm
@@ -91,14 +91,23 @@ function Dashboard() {
         </div>
       </div>
 
-      <h2 className="goal-section-heading">Your Goals</h2>
+      <h2 id="goalsection" className="goal-section-heading">My Goals</h2>
 
       <GoalList
-        goals={goals}
-        onUpdateGoal={handleUpdateGoal}
-        onDeleteGoal={handleDeleteGoal}
-        onEditGoal={setGoalBeingEdited}
-      />
+  goals={goals}
+  onUpdateGoal={handleUpdateGoal}
+  onDeleteGoal={handleDeleteGoal}
+  onEditGoal={(goal) => {
+    setGoalBeingEdited(goal);
+    setTimeout(() => {
+      const formElement = document.getElementById("goal-form");
+      if (formElement) {
+        formElement.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 100);
+  }}
+/>
+
     </div>
   );
 }

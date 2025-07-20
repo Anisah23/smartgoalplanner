@@ -3,13 +3,13 @@
   color: #fff;
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 0 10px #14f1c6;
+  box-shadow: 0 0 10px #ff0080;
   margin: 1rem auto;
   max-width: 500px;
 }
 
 .deposit-form h2 {
-  color: #14f1c6;
+  color: #ff0080;
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -28,11 +28,11 @@
 .deposit-form input {
   background: #0e1117;
   color: #fff;
-  border: 1px solid #14f1c6;
+  border: 1px solid #ff0080;
 }
 
 .deposit-form button {
-  background: #14f1c6;
+  background: #ff0080;
   color: #000;
   font-weight: bold;
   cursor: pointer;

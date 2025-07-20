@@ -12,20 +12,13 @@
 
 .navbar-logo {
   font-size: 1.6rem;
-  color: #33fbb7;
+  color: #ff0080;
   font-weight: bold;
   font-family: "Orbitron", sans-serif;
-  text-shadow: 0 0 6px #33fbb7;
+  text-shadow: 0 0 6px #ff0080;
 }
 
-.menu-toggle {
-  background: none;
-  border: none;
-  color: #33fbb7;
-  font-size: 1.8rem;
-  display: none;
-  cursor: pointer;
-}
+
 
 .navbar-links {
   list-style: none;
@@ -34,7 +27,7 @@
 }
 
 .navbar-links li a {
-  color: #ffffffcc;
+  color: 	#ff0080;
   text-decoration: none;
   font-size: 1rem;
   position: relative;
@@ -48,9 +41,9 @@
   left: 0;
   height: 2px;
   width: 0;
-  background: #33fbb7;
+  background: #ff0080;
   transition: width 0.3s ease;
-  box-shadow: 0 0 5px #33fbb7;
+  box-shadow: 0 0 5px #ff0080;
 }
 
 .navbar-links li a:hover {
@@ -61,7 +54,7 @@
   width: 100%;
 }
 
-/* Responsive Mobile Nav */
+
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;

@@ -8,10 +8,10 @@
 
 .metric {
   background: #1c1f26;
-  color: #14f1c6;
+  color: #ff0080;
   padding: 1rem 2rem;
   margin: 0.5rem;
   border-radius: 1rem;
   font-weight: bold;
-  box-shadow: 0 0 8px #14f1c6;
+  box-shadow: 0 0 8px #ff0080;
 }

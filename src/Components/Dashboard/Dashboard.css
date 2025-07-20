@@ -1,4 +1,5 @@
-/* File: Components/Dashboard/Dashboard.css */
+
+
 .dashboard-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -12,7 +13,7 @@
 .left-panel,
 .right-panel {
   background: #111827;
-  border: 1px solid #00ffc3;
+  border: 1px solid #ff0080;
   border-radius: 15px;
   padding: 20px;
   box-shadow: 0 0 20px rgba(0, 255, 204, 0.15);
@@ -29,58 +30,58 @@
   flex-direction: column;
   gap: 20px;
 }
+
+
+.collapsible-section {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+}
+
 .form-toggle-container {
   display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .form-toggle-container button {
   background-color: #0f172a;
-  color: #0fffc2;
-  border: 1px solid #0fffc2;
-  padding: 10px 15px;
-  border-radius: 8px;
+  color: #ff0080;
+  font-size: 1.1rem;
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: 2px solid #ff0080;
   cursor: pointer;
-  transition: background-color 0.2s;
+  transition: all 0.3s ease;
 }
 
 .form-toggle-container button:hover {
   background-color: #0fffc220;
+  transform: scale(1.05);
 }
 
 .forms-row {
   display: flex;
-  gap: 2rem;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 3rem;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
 }
 
 .form-panel {
-  flex: 1;
-  min-width: 300px;
-}
-.forms-row {
-  display: flex;
-  gap: 2rem;
-  justify-content: center; /* Center the forms */
-  flex-wrap: wrap;
-  margin-bottom: 2rem;
+  width: 400px;
+  background-color: #1a1a2e;
+  padding: 20px;
+  border-radius: 16px;
+ 
 }
 
-.form-panel {
-  flex: 1;
-  min-width: 350px;
-  max-width: 500px;
-}
-
-.your-goals-title {
-  font-size: 1.8rem;
-  color: #0fffc2;
-  margin-bottom: 1rem;
+.goal-section-heading {
+  font-size: 2rem;
   text-align: center;
-  font-weight: 600;
-  border-bottom: 2px solid #0fffc2;
-  padding-bottom: 10px;
+  color: #ff0080;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+ 
 }
