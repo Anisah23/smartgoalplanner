@@ -11,9 +11,11 @@ function Dashboard() {
   const [showDepositForm, setShowDepositForm] = useState(false);
   const [goalBeingEdited, setGoalBeingEdited] = useState(null);
 
-  const BASE_URL = "https://smartgoalplanner.onrender.com";
+  // Corrected URL with /goals endpoint
+  const BASE_URL = "https://smartgoalplanner.onrender.com/goals";
 
   useEffect(() => {
+    // Fetch from the correct endpoint
     fetch(BASE_URL)
       .then(res => res.json())
       .then(data => setGoals(data))
@@ -59,17 +61,17 @@ function Dashboard() {
     <div className="dashboard-container">
       <OverviewPanel goals={goals} />
 
-      <div  className="collapsible-section">
+      <div className="collapsible-section">
         <div className="form-toggle-container">
           <button onClick={() => setShowGoalForm(prev => !prev)}>
-            {showGoalForm ? "Hide Goal Form" : "Add  Goal"}
+            {showGoalForm ? "Hide Goal Form" : "Add Goal"}
           </button>
           <button onClick={() => setShowDepositForm(prev => !prev)}>
             {showDepositForm ? "Hide Deposit Form" : "Make a Deposit"}
           </button>
         </div>
 
-        <div  className="forms-row">
+        <div className="forms-row">
           {showGoalForm && (
             <div className="form-panel">
               <GoalForm
@@ -94,20 +96,19 @@ function Dashboard() {
       <h2 id="goalsection" className="goal-section-heading">My Goals</h2>
 
       <GoalList
-  goals={goals}
-  onUpdateGoal={handleUpdateGoal}
-  onDeleteGoal={handleDeleteGoal}
-  onEditGoal={(goal) => {
-    setGoalBeingEdited(goal);
-    setTimeout(() => {
-      const formElement = document.getElementById("goal-form");
-      if (formElement) {
-        formElement.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    }, 100);
-  }}
-/>
-
+        goals={goals}
+        onUpdateGoal={handleUpdateGoal}
+        onDeleteGoal={handleDeleteGoal}
+        onEditGoal={(goal) => {
+          setGoalBeingEdited(goal);
+          setTimeout(() => {
+            const formElement = document.getElementById("goal-form");
+            if (formElement) {
+              formElement.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          }, 100);
+        }}
+      />
     </div>
   );
 }
