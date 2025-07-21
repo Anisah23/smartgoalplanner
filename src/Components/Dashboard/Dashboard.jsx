@@ -11,7 +11,7 @@ function Dashboard() {
   const [showDepositForm, setShowDepositForm] = useState(false);
   const [goalBeingEdited, setGoalBeingEdited] = useState(null);
 
-  const BASE_URL = "https://smartgoalplanner-1.onrender.com/goals";
+  const BASE_URL = "https://smartgoalplanner.onrender.com";
 
   useEffect(() => {
     fetch(BASE_URL)
